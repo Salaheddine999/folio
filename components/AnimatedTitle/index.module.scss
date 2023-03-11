@@ -1,0 +1,10 @@
+@import '../../styles/mixins.scss';
+
+.title {
+
+  font-size: clamp(3rem, 9vw, 10rem);
+  // text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  overflow: hidden;
+}

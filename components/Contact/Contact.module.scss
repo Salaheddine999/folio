@@ -1,0 +1,57 @@
+@import '../../styles/mixins.scss';
+
+.container {
+    text-align: center;
+}
+
+.loop_holder {
+    display: flex;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  .loop_holder__text {
+    font-weight: 800;
+      animation: textLoop 30s linear infinite;
+      font-size: 10vw;
+      padding-right: .35em;
+      border-top: 1px solid #000;
+      border-bottom: 1px solid #000;
+      padding-top: 20px;
+      padding-bottom: 20px;
+  }
+  
+  
+  @keyframes textLoop {
+      0% {
+          -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0)
+      }
+      100% {
+          -webkit-transform: translate3d(-100%, 0, 0);
+          transform: translate3d(-100%, 0, 0)
+      }
+  }
+
+
+  .copy_email{
+    margin-top: 30px;
+    margin-bottom: 200px;
+    font-size: 24px;
+    border: 1px solid #000;
+    border-radius: 36px;
+    padding: 0 34px;
+    height: 36px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @include phone-only{
+    .loop_holder__text{
+      font-size: 60px;
+    }
+    .copy_email{
+      font-size: 20px;
+    }
+  }

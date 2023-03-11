@@ -1,0 +1,166 @@
+@import './mixins.scss';
+
+
+::-moz-selection { /* Code for Firefox */
+  color: transparent;
+  text-shadow: 0 0 5px rgba(0,0,0,0.8);
+  background: transparent;
+}
+
+::selection {
+  color: transparent;
+  text-shadow: 0 0 5px rgba(0,0,0,0.8);
+  background: transparent;
+}
+*{
+  scroll-behavior: smooth !important;
+}
+body {
+  font-family: 'Inter Tight', sans-serif;
+  scroll-behavior: smooth !important;
+}
+
+sup{
+  font-size: 65%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  top: -0.5em;
+}
+.overflow {
+  overflow: hidden;
+}
+
+.flex {
+  display: flex;
+}
+
+.section {
+  margin: 150px 0;
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+
+  h1{
+    padding-top: 12px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.2;
+  }
+}
+
+.section-part-1{
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+@include phone-only{
+  .section{
+    display: block;
+    margin: 100px 0;
+    h1{
+      margin-bottom: 25px;
+    }
+  }
+
+}
+@include tablets-only{
+  .section{
+    h1{
+      font-size: 22px;
+    }
+  }
+}
+
+.section-part-2{
+  grid-column-start: 4;
+  grid-column-end: 12;
+
+  &-paragraph{
+    margin-top: 80px;
+    font-size: 34px;
+    font-weight: 600;
+  }
+  
+}
+
+@include phone-only {
+  .nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    position: fixed;
+    font-weight: 500;
+  }
+}
+
+.nav-bar {
+  color: #000;
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  width: 100vw;
+
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 12px;
+  padding: 50px;
+
+  line-height: 1em;
+  z-index: 1;
+
+  a:hover{
+    color: #000;
+  }
+}
+
+.home-loader-wrapper {
+  display: block;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0;
+  bottom: 0;
+  background: #dfd3c3;
+  z-index: 99;
+  color: var(--main-color);
+  overflow: hidden;
+  z-index: var(--loader-index);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .home-loader-text {
+    position: absolute;
+    width: 50vw;
+    font-size: 20vw;
+    font-weight: 800;
+    text-transform: lowercase;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.secondary-cursor {
+  z-index: var(--cursor-index);
+
+  position: fixed;
+  pointer-events: none;
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  mix-blend-mode: difference;
+  left: 0;
+  border-radius: 100%;
+  opacity: 0;
+  transition: opacity 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+  &.as-visible {
+    opacity: 1;
+  }
+}
+
+

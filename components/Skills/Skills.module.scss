@@ -1,0 +1,62 @@
+@import '../../styles/mixins.scss';
+
+
+.parent {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+        h3{
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 28px;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+    }
+
+    .div1 {
+        font-size: 28px;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        line-height: 1.5;
+    }
+    .div2 {
+        font-size: 20px;
+        grid-column-start: 4;
+        grid-column-end: 12;
+
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            line-height: 2;
+            svg{
+                margin-right: 8px;
+            }
+            li{
+                margin-right: 24px;
+            }
+        }
+        
+    }
+    
+    #backend{
+        margin-top: 15px;
+    }
+
+    @include phone-only {
+        .parent{
+            display: block;
+            
+            .div2{
+                padding-bottom: 10px;
+                ul{
+                    padding-top: 10px;
+                    display: block;
+                }
+            }
+        }
+
+    }
