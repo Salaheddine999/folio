@@ -1,9 +1,8 @@
-import React, { useEffect,useState } from 'react'
+import React, { useState } from 'react'
 import styles from "./main.module.css"
-import HoverImage from "./main.js"
 import tswira from "../../public/images/noteed.png"
 import Image from 'next/image'
-export default function index() {
+export default function Projects() {
 
   const [isHovering, setIsHovering] = useState(false);
 

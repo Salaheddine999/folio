@@ -3,7 +3,7 @@ import React, { useRef } from 'react';
 import { useSplitText } from '../../hooks/useSplitText';
 
 
-export default function index() {
+export default function Skills() {
     const ref = useRef<HTMLDivElement>(null);
     useSplitText(ref, 'lines');
   return (

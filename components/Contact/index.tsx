@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 import styles from './Contact.module.scss'
-export default function index() {
 
-
+export default function Contact() {
   const [copiedLink, setCopiedLink] = useState(false)
 
   const onCopy = ()=>{
@@ -10,6 +9,7 @@ export default function index() {
     setCopiedLink(true)
     setTimeout(()=>{setCopiedLink(false)},1500)
   }
+  
   return (
     <div className={styles.container}>
         <div className={styles.loop_holder}>

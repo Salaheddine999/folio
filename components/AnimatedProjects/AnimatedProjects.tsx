@@ -27,7 +27,7 @@ export default function AnimatedProjects() {
               <p>NOTEED</p>
             </div>
             <div className={styles.description}>
-              <p className={styles.para1}>Note-taking app. Can be used to write and manage anything you'd like, with the ability to access your notes from different devices.</p>
+              <p className={styles.para1}>Note-taking app. Can be used to write and manage anything you&apos;d like, with the ability to access your notes from different devices.</p>
               <span>TECH STACK:</span>
               <p className={styles.para2}><br/>React, React Router, React Query, Tailwind CSS, Auth0, Xano.</p>
             </div>
