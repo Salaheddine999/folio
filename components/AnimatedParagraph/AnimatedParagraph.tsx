@@ -14,7 +14,7 @@ export default function AnimatedParagraph() {
             color="#89CFF0"
             multiline
             show
-            animationDelay={3000}
+            animationDelay={3500}
             padding={[ 2, 14, 2, 14 ]}
             strokeWidth={4}
           >

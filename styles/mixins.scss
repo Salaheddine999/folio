@@ -11,7 +11,7 @@
   }
   
   @mixin desktop-only{
-    @media (min-width: 991.98px) {
+    @media (min-width: 1080px) {
       @content;
     }
   }
