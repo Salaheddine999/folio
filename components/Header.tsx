@@ -25,7 +25,7 @@ export default function Header() {
           <Link href="#contact">Contact</Link>
         </motion.li>
         <motion.li variants={variants} initial="initial" animate="animate">
-          <Link href="#work">Work</Link>
+          <Link href="#skills">Skills</Link>
         </motion.li>
         <motion.li variants={variants} initial="initial" animate="animate">
           <Link href="#projects">Projects<sup>(3)</sup></Link>

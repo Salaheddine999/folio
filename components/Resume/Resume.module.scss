@@ -1,0 +1,21 @@
+.button {
+    width: fit-content;
+    height: auto;
+    font-weight: 500;
+    margin-top: 20px;
+    padding: 8px 10px 8px 10px;
+    //background-color: #19fb9b;
+    border: 1px solid black;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: .4s;
+        svg{
+            margin-right: 10px;
+        }
+  }
+  
+  .button:hover {
+    box-shadow: 3px 4px 0px rgb(0, 0, 0);
+  }
+  

@@ -15,7 +15,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Salah eddine</title>
+        <title>Salah eddine - Frontend Developer</title>
         <meta property="og:title" content="My 2023 Portfolio" key="Portfolio" />
       </Head>
       <CustomCursor />
@@ -29,7 +29,6 @@ const Home: NextPage = () => {
                 <h1 className="section-part-1">01 / ABOUT</h1>
                 <div className="section-part-2">
                   <AnimatedParagraph/>
-                  <Skills/>
                 </div>
           </section>
           <section className="section about-text" id='projects'>
@@ -43,10 +42,10 @@ const Home: NextPage = () => {
             </div>
           </section>
 
-          <section className="section" id='work'>
-                <h1 className="section-part-1">03 / WORK</h1>
+          <section className="section" id='skills'>
+                <h1 className="section-part-1">03 / SKILLS</h1>
                 <div className="section-part-2">
-                  <AnimatedExperience/>
+                  <Skills/>
                 </div>
           </section>
           <div id='contact'>

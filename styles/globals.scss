@@ -97,14 +97,14 @@ sup{
 .nav-bar {
   color: #000;
   position: fixed;
-
+  font-size: 18px;
   top: 0;
   left: 0;
   width: 100vw;
 
   display: flex;
   flex-direction: row-reverse;
-  gap: 12px;
+  gap: 10px;
   padding: 50px;
 
   line-height: 1em;

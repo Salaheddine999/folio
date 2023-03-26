@@ -2,6 +2,7 @@
 
 .container {
     text-align: center;
+    margin-top: 200px;
 }
 
 .loop_holder {
@@ -12,11 +13,11 @@
   
   .loop_holder__text {
     font-weight: 800;
-      animation: textLoop 30s linear infinite;
-      font-size: 10vw;
+      animation: textLoop 35s linear infinite;
+      font-size: 9vw;
       padding-right: .35em;
-      border-top: 1px solid #000;
-      border-bottom: 1px solid #000;
+      //border-top: 1px solid #000;
+      //border-bottom: 1px solid #000;
       padding-top: 20px;
       padding-bottom: 20px;
   }

@@ -5,7 +5,7 @@ export default function Contact() {
   const [copiedLink, setCopiedLink] = useState(false)
 
   const onCopy = ()=>{
-    navigator.clipboard.writeText("abdelwahid.salaheddine@gmail.com")
+    navigator.clipboard.writeText("abw.salaheddine@gmail.com")
     setCopiedLink(true)
     setTimeout(()=>{setCopiedLink(false)},1500)
   }
