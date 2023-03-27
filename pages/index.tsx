@@ -16,7 +16,7 @@ const Home: NextPage = () => {
     <>
       <Head>
         <title>Salah eddine - Frontend Developer</title>
-        <meta property="og:title" content="My 2023 Portfolio" key="Portfolio" />
+        <meta property="og:title" content="Salah eddine - Frontend Developer" key="Portfolio" />
       </Head>
       <CustomCursor />
         <div className="home-container">

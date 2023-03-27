@@ -1,5 +1,4 @@
 @import '../../styles/mixins.scss';
-@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600&display=swap');
 
 .main{
 	margin-bottom: 50px;
@@ -43,7 +42,6 @@
 
    
  .title {
-	font-family: 'Inter Tight', sans-serif;
 	grid-row-start: 1;
 	grid-column-start: 1;
  
@@ -51,10 +49,9 @@
 	grid-column-end: 6;
 
 	font-size: 55px;
-	font-weight: 800;
+	font-weight: 600;
  }
  .description {
-	font-family: 'Inter Tight', sans-serif;
 	grid-row-start: 2;
 	grid-column-start: 1;
  
@@ -65,20 +62,17 @@
 	line-height: 1.1;
 	
 	span{
-		font-family: 'Inter Tight', sans-serif;
 		font-size: 18px;
 		font-weight: 400 ;
 	}
 	.para1{
-		font-family: 'Inter Tight', sans-serif;
 		font-size: 18px;
 		padding-bottom: 15px;
-		font-weight: 500;
+		font-weight: 400;
 		//letter-spacing: 0.2px;
 	}
 
 	.para2{
-		font-family: 'Inter Tight', sans-serif;
 		font-size: 17px;
 		padding-bottom: 15px;
 		font-weight: 400;
@@ -111,7 +105,6 @@
 }
 
 .cta {
-	font-family: 'Inter Tight', sans-serif;
 	font-size: 20px;
 	font-weight: 400;
 
@@ -135,7 +128,6 @@
   }
 
 .cta2{
-	font-family: 'Inter Tight', sans-serif;
 	border: none;
 	background: none;
 
@@ -255,6 +247,3 @@
 	}
   }
 
-  @include low-res {
-
-  }

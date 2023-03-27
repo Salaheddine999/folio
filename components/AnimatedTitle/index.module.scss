@@ -1,10 +1,9 @@
 @import '../../styles/mixins.scss';
 
 .title {
-  font-family: 'Inter Tight', sans-serif;
   font-size: clamp(3rem, 9vw, 10vw);
   // text-align: center;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 600;
   overflow: hidden; 
 }

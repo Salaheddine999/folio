@@ -1,5 +1,4 @@
 @import './mixins.scss';
-@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600&display=swap');
 
 ::-moz-selection { /* Code for Firefox */
   color: transparent;
@@ -12,12 +11,28 @@
   text-shadow: 0 0 5px rgba(0,0,0,0.8);
   background: transparent;
 }
+
+html,
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  font-family: 'InterTight', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
 *{
   scroll-behavior: smooth !important;
-  font-family: 'Inter Tight', sans-serif;
-}
-body {
-  font-family: 'Inter Tight', sans-serif;
+
 }
 
 sup{
@@ -166,24 +181,24 @@ sup{
 
 @font-face {
   font-family: 'InterTight';
-  src: url('../public/fonts/inter-tight/InterTight-Regular.ttf');
+  src: url('./inter-tight/InterTight-Regular.ttf');
   font-weight: 400;
 }
 
 @font-face {
   font-family: 'InterTight';
-  src: url('../public/fonts/inter-tight/InterTight-Medium.ttf');
+  src: url('./inter-tight/InterTight-Medium.ttf');
   font-weight: 500;
 }
 
 @font-face {
   font-family: 'InterTight';
-  src: url('../public/fonts/inter-tight/InterTight-SemiBold.ttf');
+  src: url('./inter-tight/InterTight-SemiBold.ttf');
   font-weight: 600;
 }
 
 @font-face {
   font-family: 'InterTight';
-  src: url('../public/fonts/inter-tight/InterTight-Bold.ttf');
+  src: url('./inter-tight/InterTight-Bold.ttf');
   font-weight: 700;
 }
