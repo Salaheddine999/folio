@@ -15,8 +15,9 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Salah eddine - Frontend Developer</title>
+        <title>Salah eddine &ndash; Frontend Developer </title>
         <meta property="og:title" content="Salah eddine - Frontend Developer" key="Portfolio" />
+        <link rel="icon" type="image/x-icon" href="/favicon.PNG"></link>
       </Head>
       <CustomCursor />
         <div className="home-container">
@@ -51,7 +52,6 @@ const Home: NextPage = () => {
           <div id='contact'>
             <Contact />
           </div>
-          
           <Footer />
         </div>
       

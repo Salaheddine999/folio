@@ -19,8 +19,19 @@ export default function Header() {
 
 
   return (
-    <>
-      <ul className="nav-bar">
+    <div className='parent'>
+
+      <ul className='infos'>
+        <motion.li variants={variants} initial="initial" animate="animate">
+          <div className='infocontainer'>   
+              <div className="blob"></div>
+              <p className='infotext'>Available</p>     
+          </div>
+        </motion.li>
+      </ul>
+
+
+      <ul className="nav-bar">  
         <motion.li variants={variants} initial="initial" animate="animate">
           <Link href="#contact">Contact</Link>
         </motion.li>
@@ -34,6 +45,6 @@ export default function Header() {
           <Link href="#about">About</Link>
         </motion.li>
       </ul>
-    </>
+    </div>
   );
 }

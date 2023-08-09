@@ -68,3 +68,15 @@
           }
         }
     }
+
+    @include tablets-only{
+      .skills{
+        .side{
+          font-size: 24px;
+        }
+      }
+      .div2{
+        margin-left: 20px;
+        font-size: 14px;
+      }
+    }
