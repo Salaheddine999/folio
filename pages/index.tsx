@@ -17,7 +17,7 @@ const Home: NextPage = () => {
       <Head>
         <title>Salah eddine &ndash; Frontend Developer </title>
         <meta property="og:title" content="Salah eddine - Frontend Developer" key="Portfolio" />
-        <link rel="icon" type="image/x-icon" href="/favicon.PNG"></link>
+        <link rel="icon" type="image/x-icon" href="/favicon.png"></link>
       </Head>
       <CustomCursor />
         <div className="home-container">
