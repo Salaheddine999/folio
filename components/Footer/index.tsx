@@ -1,7 +1,9 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
+
 
 export default function Footer() {
   const year = new Date().getFullYear();
+
   return (
     <footer className="footer">
       <h6>Salah eddine</h6>
@@ -18,7 +20,7 @@ export default function Footer() {
         </a>
       </div>
 
-      <h6>Portfolio ({year})</h6>
+      <h6>&copy; {year}</h6>
     </footer>
   );
 }

@@ -9,6 +9,7 @@ import AnimatedExperience from '../components/Experience/AnimatedExperience';
 import Skills from "../components/Skills"
 import Contact from "../components/Contact"
 import Head from 'next/head'
+import Header from '@/components/Header';
 
 const Home: NextPage = () => {
 
@@ -21,6 +22,7 @@ const Home: NextPage = () => {
       </Head>
       <CustomCursor />
         <div className="home-container">
+        
           <div className="home-hero">
             <HomeCover />
             <ScrollIndicator />

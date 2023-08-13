@@ -13,7 +13,7 @@ export default function AnimatedParagraph() {
             Hello! My name is&nbsp;
             <RoughNotation
               type="highlight"
-              color="#89CFF0"
+              color="rgba(170, 255, 0, 0.6)"
               multiline
               show
               animationDelay={3500}

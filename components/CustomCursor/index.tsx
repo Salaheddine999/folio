@@ -38,6 +38,7 @@ const CustomCursor = ({ speed = 0.1 }) => {
     return () => {
       document.removeEventListener('mousemove', setMousePosition);
     };
+    
   }, []);
 
   useEffect(() => {
