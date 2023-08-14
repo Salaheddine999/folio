@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React, {useState, useEffect} from 'react';
 
 
@@ -6,7 +7,7 @@ export default function Footer() {
 
   return (
     <footer className="footer">
-      <h6>Salah eddine</h6>
+      <h6>&copy; salah eddine {year}</h6>
 
       <div>
         <a href="https://github.com/Salaheddine999" target="_blank" rel="noopener noreferrer">
@@ -20,7 +21,7 @@ export default function Footer() {
         </a>
       </div>
 
-      <h6>&copy; {year}</h6>
+      <Link href="#top">back to the top</Link>
     </footer>
   );
 }

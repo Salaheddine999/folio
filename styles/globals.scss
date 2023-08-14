@@ -151,11 +151,11 @@ sup{
 	height: 8px;
 	width: 8px;
 	transform: scale(1);
-	animation: fadeIn 1s infinite alternate;
+	animation: fadeIn 0.9s infinite alternate;
 }
 
 @keyframes fadeIn { 
-  from { opacity: 0.1; } 
+  from { opacity: 0; } 
 }
 
 .infocontainer{
