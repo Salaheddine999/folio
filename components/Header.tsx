@@ -1,7 +1,7 @@
 import React ,{useState, useEffect}from 'react';
 import { motion, Variants } from 'framer-motion';
 import Link from 'next/link';
-import Hamburger from 'hamburger-react'
+
 
 const variants: Variants = {
   initial: {
@@ -21,14 +21,14 @@ export default function Header() {
   return (
     <div className='parent'>
 
-      <ul className='infos'>
-        <motion.li variants={variants} initial="initial" animate="animate">
+      <div className='infos'>
+        <motion.div variants={variants} initial="initial" animate="animate">
           <div className='infocontainer'>   
               <div className="blob"></div>
-              <p className='infotext'>Available</p>     
+              <p className='infotext'>Available for new opportunities</p>     
           </div>
-        </motion.li>
-      </ul>
+        </motion.div>
+      </div>
 
 
       <ul className="nav-bar">  

@@ -223,7 +223,6 @@ sup{
 
 .secondary-cursor {
   z-index: var(--cursor-index);
-
   position: fixed;
   pointer-events: none;
   width: 100px;
@@ -237,9 +236,9 @@ sup{
 
   &.as-visible {
     opacity: 1;
-  }
-
+  }  
 }
+
 
 
 @font-face {

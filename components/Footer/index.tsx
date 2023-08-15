@@ -7,7 +7,7 @@ export default function Footer() {
 
   return (
     <footer className="footer">
-      <h6>&copy; salah eddine {year}</h6>
+      <h6>&copy; Salah eddine</h6>
 
       <div>
         <a href="https://github.com/Salaheddine999" target="_blank" rel="noopener noreferrer">
@@ -21,7 +21,7 @@ export default function Footer() {
         </a>
       </div>
 
-      <Link href="#top">back to the top</Link>
+      <h6>portfolio ({year})</h6>
     </footer>
   );
 }
