@@ -20,8 +20,15 @@
       //border-bottom: 1px solid #000;
       padding-top: 20px;
       padding-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 40px;
   }
   
+  .spaner{
+    font-size: 6vw;
+    //color: rgba(170, 255, 0, 1);
+  }
   
   @keyframes textLoop {
       0% {
@@ -56,6 +63,7 @@
   @include phone-only{
     .loop_holder__text{
       font-size: 60px;
+      gap: 20px;
     }
     .copy_email{
       font-size: 20px;

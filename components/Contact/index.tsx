@@ -13,9 +13,9 @@ export default function Contact() {
   return (
     <div className={styles.container}>
         <div className={styles.loop_holder}>
-          <div className={styles.loop_holder__text}>GET IN TOUCH . GET IN TOUCH . GET IN TOUCH .</div>
-          <div className={styles.loop_holder__text}>GET IN TOUCH . GET IN TOUCH . GET IN TOUCH .</div>
-          <div className={styles.loop_holder__text}>GET IN TOUCH . GET IN TOUCH . GET IN TOUCH .</div>
+          <div className={styles.loop_holder__text}>GET IN TOUCH<span className={styles.spaner}>•</span>GET IN TOUCH<span className={styles.spaner}>•</span>GET IN TOUCH<span className={styles.spaner}>•</span></div>
+          <div className={styles.loop_holder__text}>GET IN TOUCH<span className={styles.spaner}>•</span>GET IN TOUCH<span className={styles.spaner}>•</span>GET IN TOUCH<span className={styles.spaner}>•</span></div>
+          <div className={styles.loop_holder__text}>GET IN TOUCH<span className={styles.spaner}>•</span>GET IN TOUCH<span className={styles.spaner}>•</span>GET IN TOUCH<span className={styles.spaner}>•</span></div>
         </div>
         {!copiedLink ? (
           <button className={styles.copy_email} onClick={onCopy}>COPY EMAIL</button>
