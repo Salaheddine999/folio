@@ -110,7 +110,7 @@ sup{
 }
 
 .nav-bar {
-  color: #000;
+  color: #1a1a1a;
   position: fixed;
   font-size: 18px;
   top: 0;
@@ -125,11 +125,11 @@ sup{
   z-index: 1;
 
   a:hover{
-    color: #000;
+    color: #1a1a1a;
   }
 }
 .infos{
-  color: #000;
+  color: #1a1a1a;
   position: absolute;
   font-size: 14px;
   display: flex;
@@ -164,7 +164,7 @@ sup{
   gap: 4px;
   padding: 8px 12px 8px 12px;
   border-radius: 30px;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(26, 26, 26, 0.9);
 }
 
 .infotext{

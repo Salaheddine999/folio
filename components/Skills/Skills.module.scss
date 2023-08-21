@@ -7,7 +7,7 @@
         gap: 24px;
         height: auto;
         align-items: center;
-        border-top: 1px solid #000;
+        border-top: 1px solid #1a1a1a;
         padding-top: 16px;
         padding-bottom: 16px;
         //border-bottom: 1px solid #000;
@@ -35,6 +35,7 @@
             line-height: 2;
             svg{
                 margin-right: 8px;
+                fill: #1a1a1a;
             }
             li{
                 margin-right: 24px;
@@ -44,7 +45,7 @@
     }
 
     #other{
-        border-bottom: 1px solid #000;
+        border-bottom: 1px solid #1a1a1a;
     }
     @include phone-only{
         .skills{

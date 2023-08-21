@@ -9,7 +9,7 @@
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 	gap: 0px;
 	height: 100%;
-	border-top: 1px solid #000;
+	border-top: 1px solid #1a1a1a;
 	align-items:center;
 
 	.image {
@@ -80,8 +80,8 @@
 		//font-style: italic;
 		p{
 			display: inline-block;
-			border: 1px solid #000;
-			color: #000;
+			border: 1px solid #1a1a1a;
+			color: #1a1a1a;
 			box-sizing: border-box;
 			border-radius: 30px;
 			font-size: calc(0.875 * 16px);
@@ -114,7 +114,7 @@
 
 	span{
 		// background-color: rgb(248, 246, 246);
-		border: 1px solid black;
+		border: 1px solid #1a1a1a;
 		border-radius: 30px;
 		cursor: pointer;
 		transition: .4s;
@@ -123,6 +123,7 @@
 		svg{
 			margin-left: 6px;
 			padding-top: 2px;
+			fill: #1a1a1a;
 		}
 	}
   }
@@ -140,7 +141,7 @@
 	
 	span{
 		// background-color: rgb(248, 246, 246);
-		border: 1px solid black;
+		border: 1px solid #1a1a1a;
 		border-radius: 30px;
 		cursor: pointer;
 		transition: .4s;
@@ -158,12 +159,12 @@
 
 .cta{
 	span:hover{
-		box-shadow: 2px 3px 0px rgb(0, 0, 0);
+		box-shadow: 2px 3px 0px rgb(26, 26, 26);
 	}
 }
 .cta2:hover {
 	span {
-		box-shadow: 2px 3px 0px rgb(0, 0, 0);
+		box-shadow: 2px 3px 0px rgb(26, 26, 26);
   }
 }
 
@@ -175,7 +176,7 @@
 	margin-left: auto;
     margin-right: auto;
 	padding-top: 30px;
-	border-top: 1px solid #000;
+	border-top: 1px solid #1a1a1a;
   }
 
   @include phone-only{
