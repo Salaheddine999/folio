@@ -5,6 +5,8 @@ import CursorManager from '../components/CustomCursor/CursorManager';
 import CustomCursor from '../components/CustomCursor';
 import { useState } from 'react';
 import { useRouter } from 'next/router';
+import { GeistSans } from 'geist/font/sans';
+
 
 function MyApp({ Component, pageProps }: AppProps) {
   const [loader, setLoader] = useState(true);
@@ -21,6 +23,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           {/* {!loader && ( */}
           {/* <> */}
           <Component {...pageProps} />
+         
           {/* </> */}
           {/* )} */}
         </>

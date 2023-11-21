@@ -17,7 +17,7 @@ export default function Footer() {
           LinkedIn
         </a>
         <a href="https://twitter.com/salaheddine_ab" target="_blank" rel="noopener noreferrer">
-          Twitter
+          X/Twitter
         </a>
       </div>
 

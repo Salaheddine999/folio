@@ -101,7 +101,7 @@ export default function AnimatedProjects() {
           <div className={styles.more}>
             <RoughNotation
               type="highlight"
-              color="rgba(170, 255, 0, 0.7)"
+              color="#D7FE52"
               show
               animationDelay={5000}
               padding={[ 2, 14, 2, 14 ]}
