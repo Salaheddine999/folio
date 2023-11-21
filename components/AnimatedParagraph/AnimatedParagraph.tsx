@@ -10,7 +10,7 @@ export default function AnimatedParagraph() {
   return (
     <>
       <p ref={ref} id="headline" className='full-paragraph roadmap-title'>
-            Hello! My name is&nbsp;
+            Hello!  My name is&nbsp;
             <RoughNotation
               type="highlight"
               color="#D7FE52"
@@ -20,10 +20,9 @@ export default function AnimatedParagraph() {
               padding={[ 2, 14, 2, 14 ]}
               strokeWidth={4}
             >
-            Salah eddine
+            Salah eddine,
             </RoughNotation>
-          , and I&apos;m a frontend developer passionate about open source and technology that has a positive impact on people&apos;s lives. I enjoy creating beautiful and user-friendly web interfaces by constantly exploring and experimenting with new tools and techniques. In my spare time, I go out with friends or read blogs and articles from experts to stay up-to-date with the latest trends in the industry.
-      </p>
+           &nbsp; and I&apos;m a frontend developer passionate about open source and technology that has a positive impact on people&apos;s lives. I enjoy creating beautiful and user-friendly web interfaces by constantly exploring and experimenting with new tools and techniques. In my spare time, I go out with friends or read blogs and articles from experts to stay up-to-date with the latest trends in the industry, or just chill.</p>
       {/* <Resume/> */}
     </>
   );
