@@ -16,13 +16,13 @@ export default function AnimatedParagraph() {
               color="#D7FE52"
               multiline
               show
-              animationDelay={4000}
+              animationDelay={3800}
               padding={[ 2, 14, 2, 14 ]}
               strokeWidth={4}
             >
-            Salah eddine
+            Salah eddine,
             </RoughNotation>
-           ,&nbsp;your friendly neighborhood frontend developer! Passionate about open source and tech that makes a positive impact on people&apos;s lives. I&apos;m all about creating stunning, user-friendly web interfaces by constantly exploring new tools and techniques. When I&apos;m not coding, you&apos;ll find me out with friends, diving into expert blogs, or just chillin&apos;.</p>
+           &nbsp;your friendly neighborhood frontend developer! Passionate about open source and tech that makes a positive impact on people&apos;s lives. I&apos;m all about creating stunning, user-friendly web interfaces by constantly exploring new tools and techniques. When I&apos;m not coding, you&apos;ll find me out with friends, diving into expert blogs, or just chillin&apos;.</p>
       {/* <Resume/> */}
     </>
   );
