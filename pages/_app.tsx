@@ -5,6 +5,7 @@ import CursorManager from '../components/CustomCursor/CursorManager';
 import CustomCursor from '../components/CustomCursor';
 import { useState } from 'react';
 import { useRouter } from 'next/router';
+import { Analytics } from '@vercel/analytics/react';
 
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -22,6 +23,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           {/* {!loader && ( */}
           {/* <> */}
           <Component {...pageProps} />
+          <Analytics />
          
           {/* </> */}
           {/* )} */}
