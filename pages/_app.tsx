@@ -9,26 +9,26 @@ import { Analytics } from '@vercel/analytics/react';
 
 
 function MyApp({ Component, pageProps }: AppProps) {
-  const [loader, setLoader] = useState(true);
-  const router = useRouter();
+  // const [loader, setLoader] = useState(true);
+  // const router = useRouter();
 
-  const { pathname } = router;
-  if (pathname === '/roadmap') {
-    return (
-      <CursorManager>
-        <>
-          {/* <HomeLoader setLoader={setLoader} title="hey" /> */}
-          <CustomCursor />
+  // const { pathname } = router;
+  // if (pathname === '/roadmap') {
+  //   return (
+  //     <CursorManager>
+  //       <>
+  //         {/* <HomeLoader setLoader={setLoader} title="hey" /> */}
+  //         <CustomCursor />
 
-          {/* {!loader && ( */}
-          {/* <> */}
-          <Component {...pageProps} />
-          {/* </> */}
-          {/* )} */}
-        </>
-      </CursorManager>
-    );
-  }
+  //         {/* {!loader && ( */}
+  //         {/* <> */}
+  //         <Component {...pageProps} />
+  //         {/* </> */}
+  //         {/* )} */}
+  //       </>
+  //     </CursorManager>
+  //   );
+  // }
   return (
     <CursorManager>
       <>
