@@ -23,8 +23,6 @@ function MyApp({ Component, pageProps }: AppProps) {
           {/* {!loader && ( */}
           {/* <> */}
           <Component {...pageProps} />
-          <Analytics />
-         
           {/* </> */}
           {/* )} */}
         </>
@@ -40,6 +38,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <>
           <Header />
           <Component {...pageProps} />
+          <Analytics />
         </>
         {/* )} */}
       </>
