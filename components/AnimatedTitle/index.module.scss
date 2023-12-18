@@ -7,3 +7,16 @@
   font-weight: 500;
   overflow: hidden; 
 }
+
+
+@include phone-only{
+  .title {
+    font-size: 52px;
+    // text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    overflow: hidden;
+  }
+  
+
+}

@@ -61,11 +61,20 @@
   }
 
   @include phone-only{
+
+    .container {
+      text-align: center;
+      margin-top: 130px;
+  }
     .loop_holder__text{
-      font-size: 60px;
+      font-size: 100px;
       gap: 20px;
+    }
+    .spaner{
+      font-size: 70px;
     }
     .copy_email{
       font-size: 20px;
+      margin-bottom: 130px;
     }
   }
