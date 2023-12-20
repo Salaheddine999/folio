@@ -182,7 +182,7 @@ sup{
 
   &.open {
     .bar {
-      background: #fff; /* Set the color to white when the menu is open */
+      background: #F0F1F2; /* Set the color to white when the menu is open */
       transition: transform 400ms ease-in-out;
     }
     .bar:first-child {
@@ -199,10 +199,25 @@ sup{
   }
 }
 .mobile_name{
-  font-size: 28px;
-  color: #fff;
+  font-size: 30px;
+  color: #F0F1F2;
   margin-bottom: 50px;
 }
+.mobile_menu_bottom{
+  margin-top: 80px;
+  border-top: 1px solid #F0F1F2;
+
+  ul{
+    display: flex;
+    gap: 18px;
+    li{
+      padding-top: 20px;
+      font-size: 20px;
+      color: #F0F1F2;
+    }
+  }
+}
+
 .mobile-menu {
   position: fixed;
   top: 0;
@@ -220,16 +235,16 @@ sup{
     list-style: none;
     padding: 0;
     margin: 0;
-    font-size: 24px;
+    font-size: 46px;
     text-align: left;
 
     li {
-      margin-bottom: 20px;
-      font-weight: 500;
+      margin-bottom: 24px;
+      font-weight: 400;
     }
 
     a {
-      color: #fff;
+      color: #F0F1F2;
       text-decoration: none;
       &:hover {
         color: #D7FE52;
@@ -241,9 +256,9 @@ sup{
 
 @include phone-only {
 
-  .parent{
-    //justify-items: left;
-  }
+  // .parent{
+  //   //justify-items: left;
+  // }
   .infos{
     padding: 28px 15px;
     font-size: 15px;
@@ -277,7 +292,7 @@ sup{
   }
 
   .mobile-menu {
-    width: 95%;
+    width: 100%;
   }
 }
 

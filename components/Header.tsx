@@ -84,6 +84,25 @@ export default function Header() {
             <Link href="#contact" onClick={closeMenu}>Contact</Link>
           </li>
         </ul>
+        <div className='mobile_menu_bottom'>
+          <ul>
+            <li>
+              <a href="https://github.com/Salaheddine999" target="_blank" rel="noopener noreferrer">
+                Github
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/salaheddine_ab" target="_blank" rel="noopener noreferrer">
+                X (Twitter)
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/salah-eddine-abdelwahid-b340b3176/" target="_blank" rel="noopener noreferrer">
+                LinkedIn
+              </a>
+            </li>
+          </ul>
+        </div>
       </motion.div>
 
       <ul className="nav-bar">  
