@@ -2,9 +2,22 @@
 
 .container {
     text-align: center;
-    margin-top: 200px;
+    margin-top: 250px;
+    h2{
+      //text-align: left;
+      font-size: 20px;
+      padding-bottom: 20px;
+    }
+
 }
 
+.animation_container{
+  &:hover{
+    .copy_email{
+      opacity: 1;
+    }
+  }
+}
 .loop_holder {
     display: flex;
     white-space: nowrap;
@@ -13,7 +26,7 @@
   
   .loop_holder__text {
       font-weight: 500;
-      animation: textLoop 35s linear infinite;
+      animation: textLoop 20s linear infinite;
       font-size: 9vw;
       padding-right: .35em;
       //border-top: 1px solid #000;
@@ -43,17 +56,19 @@
 
 
   .copy_email{
-    margin-top: 30px;
+    margin-top: 8px;
     margin-bottom: 200px;
-    font-size: 24px;
+    font-size: 18px;
     border: 1px solid #1a1a1a;
     border-radius: 36px;
-    padding: 18px 34px;
+    padding: 12px 24px;
     height: 36px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    transition: .4s;
+    transition: .4s, opacity .3s ease-out;
+    font-weight: 300;
+    opacity: 0;
   }
 
   .copy_email:hover{
