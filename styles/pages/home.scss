@@ -163,6 +163,13 @@
   }
 
 @include phone-only{
+  .home-cover{
+    height: 70%!important;
+  }
+
+  .top-scroll-wrapper{
+    bottom: 350px!important;
+  }
   .full-paragraph{
     font-size: 26px;
     line-height: 1.2;

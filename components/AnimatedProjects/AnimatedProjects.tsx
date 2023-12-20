@@ -71,7 +71,7 @@ export default function AnimatedProjects() {
 
           <div  className={styles.project}>
             <div className={styles.title}>
-              <p>Folio</p>
+              <p className={styles.folio}>Folio</p>
             </div>
             <div className={styles.description}>
               <p className={styles.para1}>My 2023 personal portfolio. I built it to showcase my work and skills.</p>

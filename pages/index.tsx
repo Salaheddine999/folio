@@ -27,7 +27,7 @@ const Home: NextPage = () => {
             <HomeCover />
             <ScrollIndicator />
           </div>
-          
+          <div className='inside-container'>
           <section className="section" id='about'>
                 <h1 className="section-part-1">01 / ABOUT</h1>
                 <div className="section-part-2">
@@ -55,6 +55,8 @@ const Home: NextPage = () => {
             <Contact />
           </div>
           <Footer />
+          </div>
+          
         </div>
     </>
   );

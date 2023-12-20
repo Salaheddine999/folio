@@ -198,7 +198,8 @@
 		grid-row: unset;
 	}
 	.cta{
-		font-size: 18px;
+		font-size: 20px!important;
+
 		span{
 			svg{
 				padding-top: 5px;
@@ -209,7 +210,7 @@
 	.cta2{
 
 		margin-bottom: 15px;
-		font-size: 18px;
+		font-size: 20px!important;
 		margin-left: 5px;
 	}
 	.para2{
@@ -222,6 +223,11 @@
 		grid-column-end: unset;
 		grid-row: unset;
 		padding-bottom: 10px;
+	}
+
+	.folio{
+		padding-top: 50px;
+		padding-bottom: 40px;
 	}
 
   }
