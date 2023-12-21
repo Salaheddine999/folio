@@ -100,11 +100,11 @@ export default function AnimatedProjects() {
 
           <div className={styles.more}>
             <RoughNotation
-              type="highlight"
+              type="circle"
               color="#D7FE52"
               show
-              animationDelay={5000}
-              padding={[ 2, 14, 2, 14 ]}
+              animationDelay={6000}
+              padding={[ 3, 14, 3, 14 ]}
               strokeWidth={2}
             >
               <a href='https://github.com/Salaheddine999' target="_blank">More Projects</a>

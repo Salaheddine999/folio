@@ -21,7 +21,7 @@ export default function Contact() {
               color="#D7FE52"
               multiline
               show
-              animationDelay={3800}
+              animationDelay={7000}
               padding={[ 2, 14, 2, 14 ]}
               strokeWidth={4}
             >
