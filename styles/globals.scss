@@ -7,6 +7,8 @@
 }
 
 ::selection {
+  // background-color: #1a1a1a;
+  // color: #D7FE52;
   color: transparent;
   text-shadow: 0 0 5px rgba(0,0,0,0.8);
   background: transparent;
@@ -327,21 +329,67 @@ sup{
 
 .secondary-cursor {
   z-index: var(--cursor-index);
+
   position: fixed;
   pointer-events: none;
   width: 100px;
   height: 100px;
-  background-color: white;
+  background-color: #F0F1F2;
   mix-blend-mode: difference;
   left: 0;
   border-radius: 100%;
   opacity: 0;
-  transition: opacity 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: opacity 2s cubic-bezier(0.075, 0.82, 0.165, 1),  width 0.4s ease, height 0.4s ease;
 
   &.as-visible {
     opacity: 1;
-  }  
+  }
+  &.copyhover{
+    width: 75px;
+    height: 75px;
+    background-color: #000;
+    mix-blend-mode: normal;
+    opacity: 0.9;
+  }
+  .copy-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 400;
+    /* Optionally, adjust positioning for better alignment within the cursor */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #F0F1F2;
+  }
+  &.viewhover{
+    width: 75px;
+    height: 75px;
+    background-color: #000;
+    mix-blend-mode: normal;
+    opacity: 0.85;
+  }
+  .view-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 400;
+    /* Optionally, adjust positioning for better alignment within the cursor */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #F0F1F2;
+  }
 }
+
+.top{
+  cursor: pointer;
+}
+
 
 @include phone-only{
   .home-container{

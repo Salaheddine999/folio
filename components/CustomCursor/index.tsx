@@ -6,6 +6,9 @@ function lerp(start: number, end: number, amt: number) {
   return (1 - amt) * start + amt * end;
 }
 const CustomCursor = ({ speed = 0.1 }) => {
+    // Add state for hovering over h1
+  const [isCopyHovered, setIsCopyHovered] = useState(false);
+  const [isViewHovered, setIsViewHovered] = useState(false);
   const { projectTitle } = useContext(CursorContext);
   const mainCursor = React.useRef<HTMLDivElement>(null);
   const positionRef = React.useRef({
@@ -38,8 +41,39 @@ const CustomCursor = ({ speed = 0.1 }) => {
     return () => {
       document.removeEventListener('mousemove', setMousePosition);
     };
-    
   }, []);
+
+  useEffect(() => {
+    function checkHoverOnElements(event: MouseEvent) {
+      const copyBtn = document.querySelector('#copy_btn');
+      const viewBtns = document.querySelectorAll('.view_btn');
+      
+      const isCopyHovered = checkHover(copyBtn, event);
+      const isViewHovered = Array.from(viewBtns).some((btn) => checkHover(btn, event));
+    
+      setIsCopyHovered(isCopyHovered);
+      setIsViewHovered(isViewHovered);
+    }
+
+    function checkHover(element: Element | null, event: MouseEvent): boolean {
+      if (!element) return false;
+
+      const rect = element.getBoundingClientRect();
+      return (
+        event.clientX >= rect.left &&
+        event.clientX <= rect.right &&
+        event.clientY >= rect.top &&
+        event.clientY <= rect.bottom
+      );
+    }
+
+    document.addEventListener('mousemove', checkHoverOnElements);
+
+    return () => {
+      document.removeEventListener('mousemove', checkHoverOnElements);
+    };
+  }, []);
+
 
   useEffect(() => {
     const followMouse = () => {
@@ -66,8 +100,18 @@ const CustomCursor = ({ speed = 0.1 }) => {
   }, [speed]);
 
   return (
-    <div className="cursor-wrapper">
-      <div className={cn('secondary-cursor', { 'as-visible': visible })} ref={mainCursor}></div>
+<div className="cursor-wrapper">
+      <div
+        className={cn('secondary-cursor', {
+          'as-visible': visible,
+          copyhover: isCopyHovered,
+          viewhover: isViewHovered,
+        })}
+        ref={mainCursor}
+      >
+        {isCopyHovered && !isViewHovered && <span className="copy-text">✉️</span>}
+        {isViewHovered && !isCopyHovered && <span className="view-text">View</span>}
+      </div>
     </div>
   );
 };

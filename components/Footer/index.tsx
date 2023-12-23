@@ -1,13 +1,17 @@
 import Link from 'next/link';
-import React, {useState, useEffect} from 'react';
-
+import React, { useState, useEffect } from 'react';
 
 export default function Footer() {
-  const year = new Date().getFullYear();
+  //const year = new Date().getFullYear();
+
+  const topFunction = () => {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  };
 
   return (
     <footer className="footer">
-      <h6>&copy; Salah eddine</h6>
+      <h6>Salah eddine</h6>
 
       <div>
         <a href="https://github.com/Salaheddine999" target="_blank" rel="noopener noreferrer">
@@ -17,11 +21,13 @@ export default function Footer() {
           LinkedIn
         </a>
         <a href="https://twitter.com/salaheddine_ab" target="_blank" rel="noopener noreferrer">
-          X/Twitter
+          X (Twitter)
         </a>
       </div>
 
-      <h6>portfolio ({year})</h6>
+      <a onClick={topFunction} className='top'>
+        BACK TO TOP
+      </a>
     </footer>
   );
 }

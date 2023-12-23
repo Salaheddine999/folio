@@ -35,9 +35,9 @@ export default function Contact() {
               <div className={styles.loop_holder__text}>Contact me<span className={styles.spaner}>•</span>Contact me<span className={styles.spaner}>•</span>Contact me<span className={styles.spaner}>•</span></div>
             </div>
             {!copiedLink ? (
-              <button className={styles.copy_email} onClick={onCopy}>CLICK TO COPY EMAIL</button>
+              <button className={styles.copy_email} onClick={onCopy} id="copy_btn">CLICK TO COPY EMAIL</button>
             ):(
-              <button className={styles.copy_email}>EMAIL COPIED!</button>
+              <button className={styles.copy_email} id="copy_btn">EMAIL COPIED!</button>
             )}
           </div>
 
