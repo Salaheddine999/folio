@@ -98,7 +98,7 @@ export default function AnimatedProjects() {
             </div> 
           </div>
 
-          <div className={`${styles.more} view_btn`}>
+          <div className={styles.more}>
             <RoughNotation
               type="circle"
               color="#D7FE52"
@@ -107,7 +107,7 @@ export default function AnimatedProjects() {
               padding={[ 3, 14, 3, 14 ]}
               strokeWidth={2}
             >
-              <a href='https://github.com/Salaheddine999' target="_blank">More Projects</a>
+              <a href='https://github.com/Salaheddine999' target="_blank" className='view_btn'>More Projects</a>
             </RoughNotation>
           </div>
         </div>

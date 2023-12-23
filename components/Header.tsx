@@ -55,8 +55,27 @@ export default function Header() {
           </div>
         </motion.div>
       </div>
-    {/* Burger Menu Button */}
-    <div className={`burger-menu ${isMobileMenuOpen ? 'open' : ''}`} onClick={toggleMobileMenu}>
+      
+      <ul className="nav-bar">
+        <div className='sub-nav menu_btn'>
+        <motion.li variants={variants} initial="initial" animate="animate">
+          <Link href="#contact" className='menu_link'>Contact</Link>
+        </motion.li>
+        <motion.li variants={variants} initial="initial" animate="animate">
+          <Link href="#skills" className='menu_link'>Skills</Link>
+        </motion.li>
+        <motion.li variants={variants} initial="initial" animate="animate">
+          <Link href="#projects" className='menu_link'>Projects</Link><sup>&nbsp;3</sup>
+        </motion.li>
+        <motion.li variants={variants} initial="initial" animate="animate">
+          <Link href="#about" className='menu_link'>About</Link>
+        </motion.li>
+        </div>
+      </ul>
+
+
+      {/* Burger Menu Button */}
+      <div className={`burger-menu ${isMobileMenuOpen ? 'open' : ''}`} onClick={toggleMobileMenu}>
         <div className="bar"></div>
         <div className="bar"></div>
         <div className="bar"></div>
@@ -75,7 +94,7 @@ export default function Header() {
             <Link href="#about" onClick={closeMenu}>About</Link>
           </li>
           <li>
-            <Link href="#projects" onClick={closeMenu}>Projects</Link>
+            <Link href="#projects" onClick={closeMenu}>Projects<sup>&nbsp;3</sup></Link>
           </li>
           <li>
             <Link href="#skills" onClick={closeMenu}>Skills</Link>
@@ -105,20 +124,6 @@ export default function Header() {
         </div>
       </motion.div>
 
-      <ul className="nav-bar">  
-        <motion.li variants={variants} initial="initial" animate="animate">
-          <Link href="#contact">Contact</Link>
-        </motion.li>
-        <motion.li variants={variants} initial="initial" animate="animate">
-          <Link href="#skills">Skills</Link>
-        </motion.li>
-        <motion.li variants={variants} initial="initial" animate="animate">
-          <Link href="#projects">Projects<sup>(3)</sup></Link>
-        </motion.li>
-        <motion.li variants={variants} initial="initial" animate="animate">
-          <Link href="#about">About</Link>
-        </motion.li>
-      </ul>
     </div>
   );
 }

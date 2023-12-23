@@ -35,7 +35,7 @@ const Home: NextPage = () => {
                 </div>
           </section>
           <section className="section about-text" id='projects'>
-            <h1 className="section-part-1">02 / SELECTED<br/>PROJECTS <sup>(3)</sup></h1>
+            <h1 className="section-part-1">02 / SELECTED<br/>PROJECTS <sup>3</sup></h1>
             <div className="section-part-2">
                   <AnimatedProjects/>
                   {/* <Projects/> */}

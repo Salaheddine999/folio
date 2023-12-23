@@ -1,17 +1,19 @@
 @import './mixins.scss';
 
 ::-moz-selection { /* Code for Firefox */
-  color: transparent;
-  text-shadow: 0 0 5px rgba(0,0,0,0.8);
-  background: transparent;
+  background-color: #D7FE52;
+  color: #1a1a1a;
+  // color: transparent;
+  // text-shadow: 0 0 5px rgba(0,0,0,0.8);
+  // background: transparent;
 }
 
 ::selection {
-  // background-color: #1a1a1a;
-  // color: #D7FE52;
-  color: transparent;
-  text-shadow: 0 0 5px rgba(0,0,0,0.8);
-  background: transparent;
+   background-color: #D7FE52;
+   color: #1a1a1a;
+  // color: transparent;
+  // text-shadow: 0 0 5px rgba(0,0,0,0.8);
+  // background: transparent;
 }
 
 html,
@@ -28,8 +30,7 @@ ul,
 li {
   padding: 0;
   margin: 0;
-  font-family: 'InterTight', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Inter Tight', sans-serif;
 }
 
 *{
@@ -38,7 +39,7 @@ li {
 }
 
 sup{
-  font-size: 65%;
+  font-size: 70%;
   line-height: 0;
   position: relative;
   vertical-align: baseline;
@@ -103,14 +104,13 @@ sup{
 .nav-bar {
   color: #1a1a1a;
   position: fixed;
-  font-size: 18px;
+  font-size: 17px;
   top: 0;
   left: 0;
   width: 100vw;
   font-weight: 400;
   display: flex;
   flex-direction: row-reverse;
-  gap: 10px;
   padding: 50px;
   line-height: 1em;
   z-index: 1;
@@ -119,13 +119,37 @@ sup{
     color: #1a1a1a;
   }
 }
+.sub-nav{
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 20px;
+}
+.menu_link {
+  position: relative;
+}
+.menu_link::before {
+  content: '';
+  width: 0;
+  height: 1px;
+  border-radius: 2px;
+  background-color: #1a1a1a;
+  position: absolute;
+  bottom: -.25rem;
+  right: 0;
+  transition: right .4s, width .4s, left .4s;
+}
+
+.menu_link:hover::before {
+  width: 100%;
+  left: 0;
+}
 .infos{
   color: #1a1a1a;
   position: absolute;
   font-size: 14px;
   display: flex;
   gap: 6px;
-  padding: 50px;
+  padding: 44px;
   z-index: 1;
 }
 .parent {
@@ -332,8 +356,8 @@ sup{
 
   position: fixed;
   pointer-events: none;
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   background-color: #F0F1F2;
   mix-blend-mode: difference;
   left: 0;
@@ -345,11 +369,15 @@ sup{
     opacity: 1;
   }
   &.copyhover{
-    width: 75px;
-    height: 75px;
+    width: 85px;
+    height: 85px;
     background-color: #000;
     mix-blend-mode: normal;
     opacity: 0.9;
+  }
+  &.menuhover{
+    width: 0px;
+    height: 0px;
   }
   .copy-text {
     display: flex;
@@ -365,11 +393,11 @@ sup{
     color: #F0F1F2;
   }
   &.viewhover{
-    width: 75px;
-    height: 75px;
+    width: 85px;
+    height: 85px;
     background-color: #000;
     mix-blend-mode: normal;
-    opacity: 0.85;
+    opacity: 0.9;
   }
   .view-text {
     display: flex;

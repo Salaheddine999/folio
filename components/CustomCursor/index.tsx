@@ -8,6 +8,7 @@ function lerp(start: number, end: number, amt: number) {
 const CustomCursor = ({ speed = 0.1 }) => {
     // Add state for hovering over h1
   const [isCopyHovered, setIsCopyHovered] = useState(false);
+  const [isMenuHovered, setIsMenuHovered] = useState(false);
   const [isViewHovered, setIsViewHovered] = useState(false);
   const { projectTitle } = useContext(CursorContext);
   const mainCursor = React.useRef<HTMLDivElement>(null);
@@ -47,12 +48,15 @@ const CustomCursor = ({ speed = 0.1 }) => {
     function checkHoverOnElements(event: MouseEvent) {
       const copyBtn = document.querySelector('#copy_btn');
       const viewBtns = document.querySelectorAll('.view_btn');
+      const menuBtn = document.querySelectorAll('.menu_btn')
       
+      const isMenuHovered = Array.from(menuBtn).some((btn) => checkHover(btn, event));
       const isCopyHovered = checkHover(copyBtn, event);
       const isViewHovered = Array.from(viewBtns).some((btn) => checkHover(btn, event));
     
       setIsCopyHovered(isCopyHovered);
       setIsViewHovered(isViewHovered);
+      setIsMenuHovered(isMenuHovered);
     }
 
     function checkHover(element: Element | null, event: MouseEvent): boolean {
@@ -106,11 +110,13 @@ const CustomCursor = ({ speed = 0.1 }) => {
           'as-visible': visible,
           copyhover: isCopyHovered,
           viewhover: isViewHovered,
+          menuhover: isMenuHovered,
         })}
         ref={mainCursor}
       >
         {isCopyHovered && !isViewHovered && <span className="copy-text">✉️</span>}
         {isViewHovered && !isCopyHovered && <span className="view-text">View</span>}
+
       </div>
     </div>
   );
