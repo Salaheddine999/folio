@@ -6,7 +6,7 @@ import CustomCursor from '../components/CustomCursor';
 import { useState } from 'react';
 import { useRouter } from 'next/router';
 import { Analytics } from '@vercel/analytics/react';
-
+import SmoothScrolling from '@/components/SmoothScrolling';
 
 function MyApp({ Component, pageProps }: AppProps) {
   // const [loader, setLoader] = useState(true);
@@ -30,19 +30,21 @@ function MyApp({ Component, pageProps }: AppProps) {
   //   );
   // }
   return (
-    <CursorManager>
-      <>
-        {/* <HomeLoader setLoader={setLoader} title="folio" /> */}
-
-        {/* {!loader && ( */}
+    <SmoothScrolling>
+      <CursorManager>
         <>
-          <Header />
-          <Component {...pageProps} />
-          <Analytics />
+          {/* <HomeLoader setLoader={setLoader} title="folio" /> */}
+
+          {/* {!loader && ( */}
+          <>
+            <Header />
+            <Component {...pageProps} />
+            <Analytics />
+          </>
+          {/* )} */}
         </>
-        {/* )} */}
-      </>
-    </CursorManager>
+      </CursorManager>
+    </SmoothScrolling>
   );
 }
 

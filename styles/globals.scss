@@ -33,10 +33,10 @@ li {
   font-family: 'Inter Tight', sans-serif;
 }
 
-*{
-  scroll-behavior: smooth !important;
+// *{
+//   scroll-behavior: smooth !important;
 
-}
+// }
 
 sup{
   font-size: 70%;
@@ -371,11 +371,11 @@ sup{
     opacity: 1;
   }
   &.copyhover{
-    width: 85px;
-    height: 85px;
+    width: 80px;
+    height: 80px;
     background-color: #000;
     mix-blend-mode: normal;
-    opacity: 0.9;
+    opacity: 0.95;
   }
   &.menuhover{
     width: 0px;
@@ -395,11 +395,11 @@ sup{
     color: #F0F1F2;
   }
   &.viewhover{
-    width: 85px;
-    height: 85px;
+    width: 80px;
+    height: 80px;
     background-color: #000;
     mix-blend-mode: normal;
-    opacity: 0.9;
+    opacity: 0.95;
   }
   .view-text {
     display: flex;
