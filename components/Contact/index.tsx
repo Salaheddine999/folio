@@ -37,7 +37,7 @@ export default function Contact() {
             {!copiedLink ? (
               <button className={styles.copy_email} onClick={onCopy} id="copy_btn">CLICK TO COPY EMAIL</button>
             ):(
-              <button className={styles.copy_email} id="copy_btn">EMAIL COPIED!</button>
+              <button className={styles.copy_email} id="copy_btn">DONE!</button>
             )}
           </div>
 

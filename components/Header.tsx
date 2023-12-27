@@ -1,7 +1,7 @@
 import React ,{useState, useEffect}from 'react';
 import { motion, Variants } from 'framer-motion';
 import Link from 'next/link';
-
+import { useLenis } from "@studio-freight/react-lenis";
 
 const variants: Variants = {
   initial: {
@@ -44,6 +44,12 @@ export default function Header() {
     setMobileMenuOpen(false)
   }
 
+  const lenis = useLenis(({ scroll }) => {
+    // called every scroll
+    // console.log(scroll);
+  });
+
+
   return (
     <div className='parent'>
 
@@ -59,16 +65,16 @@ export default function Header() {
       <ul className="nav-bar">
         <div className='sub-nav menu_btn'>
         <motion.li variants={variants} initial="initial" animate="animate">
-          <Link href="#contact" className='menu_link'>Contact</Link>
+          <Link href="#contact" className='menu_link' onClick={() => lenis.scrollTo("#contact", { lerp: 0.1 })}>Contact</Link>
         </motion.li>
         <motion.li variants={variants} initial="initial" animate="animate">
-          <Link href="#skills" className='menu_link'>Skills</Link>
+          <Link href="#skills" className='menu_link' onClick={() => lenis.scrollTo("#skills", { lerp: 0.1 })}>Skills</Link>
         </motion.li>
         <motion.li variants={variants} initial="initial" animate="animate">
-          <Link href="#projects" className='menu_link'>Projects</Link><sup>&nbsp;3</sup>
+          <Link href="#projects" className='menu_link' onClick={() => lenis.scrollTo("#projects", { lerp: 0.1 })}>Projects</Link><sup>&nbsp;3</sup>
         </motion.li>
         <motion.li variants={variants} initial="initial" animate="animate">
-          <Link href="#about" className='menu_link'>About</Link>
+          <Link href="#about" className='menu_link' onClick={() => lenis.scrollTo("#about", { lerp: 0.1 })}>About</Link>
         </motion.li>
         </div>
       </ul>
