@@ -100,10 +100,10 @@ export default function AnimatedProjects() {
 
           <div className={styles.more}>
             <RoughNotation
-              type="circle"
+              type="underline"
               color="#D7FE52"
               show
-              animationDelay={6000}
+              animationDelay={5000}
               padding={[ 3, 14, 3, 14 ]}
               strokeWidth={2}
             >
