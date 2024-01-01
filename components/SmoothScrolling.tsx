@@ -10,7 +10,7 @@ export default function SmoothScrolling({ children }:Props) {
     <ReactLenis
       root
       options={{
-        lerp: 0.5, // Smoothness factor
+        lerp: 0.4, // Smoothness factor
         duration: 1.3, // Scroll duration in seconds
         //smoothTouch: true, // Enable smooth scrolling on touch devices
         
