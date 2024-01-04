@@ -378,8 +378,8 @@ sup{
 
   position: fixed;
   pointer-events: none;
-  width: 110px;
-  height: 110px;
+  width: 100px;
+  height: 100px;
   background-color: #F0F1F2;
   mix-blend-mode: difference;
   left: 0;
@@ -391,11 +391,11 @@ sup{
     opacity: 1;
   }
   &.copyhover{
-    width: 80px;
-    height: 80px;
+    width: 75px;
+    height: 75px;
     background-color: #000;
     mix-blend-mode: normal;
-    opacity: 0.8;
+    opacity: 0.9;
   }
   &.menuhover{
     width: 0px;
@@ -415,11 +415,11 @@ sup{
     color: #F0F1F2;
   }
   &.viewhover{
-    width: 80px;
-    height: 80px;
+    width: 75px;
+    height: 75px;
     background-color: #000;
     mix-blend-mode: normal;
-    opacity: 0.8;
+    opacity: 0.9;
   }
   .view-text {
     display: flex;
