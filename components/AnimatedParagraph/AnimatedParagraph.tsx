@@ -22,8 +22,8 @@ export default function AnimatedParagraph() {
             >
             Salah eddine,
             </RoughNotation>
-           &nbsp;your friendly neighborhood frontend developer with a sprinkle of caffeine ☕️ and a dash of open-source passion ✨. I'm all about creating user-friendly web interfaces that are not only stunning but also leave a positive mark on the world.
-          When the keyboard goes silent, you'll find me out with friends 🤝🏻, diving into the wisdom of expert blogs (and maybe a guilty pleasure meme or two 😄), or just chilling with a good book 📚 and a steaming cup of Moroccan mint tea 🍵.</p>
+           &nbsp;your friendly neighborhood frontend developer with a sprinkle of caffeine ☕️ and a dash of open-source passion ✨. I&apos;m all about creating user-friendly web interfaces that are not only stunning but also leave a positive mark on the world.
+          When the keyboard goes silent, you&apos;ll find me out with friends 🤝🏻, diving into the wisdom of expert blogs (and maybe a guilty pleasure meme or two 😄), or just chilling with a good book 📚 and a steaming cup of Moroccan mint tea 🍵.</p>
       {/* <Resume/> */}
     </>
   );
