@@ -32,7 +32,7 @@ li {
   margin: 0;
   font-family: 'Inter Tight', sans-serif;
   scrollbar-width: thin;
-  scrollbar-color: rgba(26, 26, 26, 0.9) rgba(0, 0, 0, 0.1);
+  scrollbar-color: rgba(26, 26, 26, 0.85) rgba(0, 0, 0, 0.1);
 }
 
 // *{
@@ -47,7 +47,7 @@ li {
 
 /* Target the scrollbar thumb (draggable part) */
 ::-webkit-scrollbar-thumb {
-  background-color: rgba(26, 26, 26, 0.9); /* Set thumb color */
+  background-color: rgba(26, 26, 26, 0.85); /* Set thumb color */
   border-radius: 30px; /* Add rounded corners */
 }
 
@@ -395,7 +395,7 @@ sup{
     height: 75px;
     background-color: #000;
     mix-blend-mode: normal;
-    opacity: 0.9;
+    opacity: 0.95;
   }
   &.menuhover{
     width: 0px;
@@ -419,7 +419,7 @@ sup{
     height: 75px;
     background-color: #000;
     mix-blend-mode: normal;
-    opacity: 0.9;
+    opacity: 0.95;
   }
   .view-text {
     display: flex;

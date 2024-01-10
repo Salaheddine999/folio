@@ -18,7 +18,7 @@ export default function AnimatedParagraph() {
               show
               animationDelay={3800}
               padding={[ 2, 14, 2, 14 ]}
-              strokeWidth={4}
+              strokeWidth={2}
             >
             Salah eddine,
             </RoughNotation>
