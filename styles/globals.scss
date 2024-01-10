@@ -378,8 +378,8 @@ sup{
 
   position: fixed;
   pointer-events: none;
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   background-color: #F0F1F2;
   mix-blend-mode: difference;
   left: 0;
@@ -391,8 +391,8 @@ sup{
     opacity: 1;
   }
   &.copyhover{
-    width: 75px;
-    height: 75px;
+    width: 85px;
+    height: 85px;
     background-color: #000;
     mix-blend-mode: normal;
     opacity: 0.95;
@@ -415,8 +415,8 @@ sup{
     color: #F0F1F2;
   }
   &.viewhover{
-    width: 75px;
-    height: 75px;
+    width: 85px;
+    height: 85px;
     background-color: #000;
     mix-blend-mode: normal;
     opacity: 0.95;
