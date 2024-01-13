@@ -115,10 +115,12 @@ const CustomCursor = ({ speed = 0.1 }) => {
         ref={mainCursor}
       >
         {isCopyHovered && !isViewHovered && <span className="copy-text">
-        <svg width="38px" height="38px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#D7FE52"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M3.5 5.5L10.5858 12.5858C11.3668 13.3668 12.6332 13.3668 13.4142 12.5858L20.5 5.5M4 19H20C20.5523 19 21 18.5523 21 18V6C21 5.44772 20.5523 5 20 5H4C3.44772 5 3 5.44772 3 6V18C3 18.5523 3.44772 19 4 19Z" stroke="#D7FE52" stroke-width="0.92" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+        {/* <svg width="38px" height="38px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#D7FE52"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M3.5 5.5L10.5858 12.5858C11.3668 13.3668 12.6332 13.3668 13.4142 12.5858L20.5 5.5M4 19H20C20.5523 19 21 18.5523 21 18V6C21 5.44772 20.5523 5 20 5H4C3.44772 5 3 5.44772 3 6V18C3 18.5523 3.44772 19 4 19Z" stroke="#D7FE52" stroke-width="0.92" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg> */}
+        Copy
         </span>}
         {isViewHovered && !isCopyHovered && <span className="view-text">
-        <svg width="35px" height="35px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path stroke="#D7FE52" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" d="M4.343 15.657L15.657 4.343m0 0v9.9m0-9.9h-9.9"></path> </g></svg>
+        {/* <svg width="35px" height="35px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path stroke="#D7FE52" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" d="M4.343 15.657L15.657 4.343m0 0v9.9m0-9.9h-9.9"></path> </g></svg> */}
+        View
         </span>}
 
       </div>
