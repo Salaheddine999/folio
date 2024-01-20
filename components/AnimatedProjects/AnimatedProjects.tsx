@@ -15,7 +15,7 @@ export default function AnimatedProjects() {
               <p>HouseFinder</p>
             </div>
             <div className={styles.description}>
-              <p className={styles.para1}>A marketplace that allows users to list houses for sale/rent. And allows visitors to search for properties and contact the owners. </p>
+              <p className={styles.para1}>An online marketplace enabling users to list houses for sale or rent, while providing visitors with the capability to search for properties and directly contact the owners.</p>
               <div className={styles.para2}><br/>
                 <p>React</p>
                 <p>React Router</p>
@@ -43,7 +43,7 @@ export default function AnimatedProjects() {
               <p>Noteed</p>
             </div>
             <div className={styles.description}>
-              <p className={styles.para1}>Note-taking app. Can be used to write and manage anything you&apos;d like, with the ability to access your notes from different devices.</p>
+              <p className={styles.para1}>A versatile note-taking application that empowers users to effortlessly write and manage diverse content, while offering seamless access to their notes from various devices.</p>
               <div className={styles.para2}>
                 <p>React</p>
                 <p>React Router</p>
@@ -74,7 +74,7 @@ export default function AnimatedProjects() {
               <p className={styles.folio}>Folio</p>
             </div>
             <div className={styles.description}>
-              <p className={styles.para1}>My 2023 personal portfolio. I built it to showcase my work and skills.</p>
+              <p className={styles.para1}>Presenting my 2023 personal portfolio—a platform meticulously crafted to showcase my exemplary work and demonstrate my diverse skill set.</p>
               <div className={styles.para2}><br/>
                 <p>Next</p>
                 <p>TypeScript</p>

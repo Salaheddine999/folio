@@ -47,7 +47,7 @@ li {
 
 /* Target the scrollbar thumb (draggable part) */
 ::-webkit-scrollbar-thumb {
-  background-color: rgba(26, 26, 26, 0.85); /* Set thumb color */
+  background-color: rgba(26, 26, 26, 1); /* Set thumb color */
   border-radius: 30px; /* Add rounded corners */
 }
 
