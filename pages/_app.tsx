@@ -6,6 +6,7 @@ import CustomCursor from '../components/CustomCursor';
 import { useState } from 'react';
 import { useRouter } from 'next/router';
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import SmoothScrolling from '@/components/SmoothScrolling';
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -40,6 +41,7 @@ function MyApp({ Component, pageProps }: AppProps) {
             <Header />
             <Component {...pageProps} />
             <Analytics />
+            <SpeedInsights/>
           </>
           {/* )} */}
         </>
