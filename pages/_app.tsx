@@ -1,13 +1,13 @@
-import '../styles/root.scss';
-import type { AppProps } from 'next/app';
-import Header from '../components/Header';
-import CursorManager from '../components/CustomCursor/CursorManager';
-import CustomCursor from '../components/CustomCursor';
-import { useState } from 'react';
-import { useRouter } from 'next/router';
-import { Analytics } from '@vercel/analytics/react';
-import SmoothScrolling from '@/components/SmoothScrolling';
-import { SpeedInsights } from '@vercel/speed-insights/react';
+import "../styles/root.scss";
+import type { AppProps } from "next/app";
+import Header from "../components/Header";
+import CursorManager from "../components/CustomCursor/CursorManager";
+import CustomCursor from "../components/CustomCursor";
+import { useState } from "react";
+import { useRouter } from "next/router";
+import { Analytics } from "@vercel/analytics/react";
+import SmoothScrolling from "@/components/SmoothScrolling";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 function MyApp({ Component, pageProps }: AppProps) {
   // const [loader, setLoader] = useState(true);
@@ -42,7 +42,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           <>
             <Header />
             <Component {...pageProps} />
-            <SpeedInsights/>
+            <Analytics />
             <SpeedInsights route={router.pathname} />
           </>
           {/* )} */}
